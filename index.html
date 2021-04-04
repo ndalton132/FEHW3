@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container p-3 my-3 bg-dark text-white">
+    <style>
+        body{
+            background-color: lightgrey
+        }
+        .card{
+            background-color: lightslategrey;
+        }
+        .win{
+            background-color: black;
+        }
+        #list{
+            border: solid black;
+            
+        }
+    </style>
+    <br>
+   
+
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class= align-center>
+                <div class="media d-flex">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="InputStyle" id="new-start-date">
+
+
+                    </div>
+                    </div>
+                </div>
+            <div class="col-sm">
+                <label for="new-start-date">End Date Date</label>
+                <input type="date" class="InputStyle" id="new-end-date">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-task">Goal</label>
+                    <input type="text" class="form-control" id="new-task" placeholder="Task">
+                </div>
+            </div>
+        </div>
+        <button id="add" class="btn btn-primary from-control">Create</button>
+        </div>   
+</div>
+
+<table id="list" class="table table-hover table-dark">
+
+    
+    <tr class="win">
+        <th>Goal</th>
+        <th>Created Date</th>
+        <th>Start Date</th>
+        <th>Accomplished by</th>
+    </tr>
+
+</table>
+    
+
+    
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
